@@ -1,0 +1,149 @@
+react ecosystem - tools,libraries and frameworks that works well together with react
+
+component :- self contained section of code(html+javascript+css) that
+ functions as a reusable building block
+
+React is declarative:
+   react focuses on describing what the UI should look like based on the
+   application state(data),rather than explicitly instructing how to update 
+   the UI step by step
+
+node -v - check node installation
+npm -v - check node package manager
+npx -v
+
+create react app in old style
+npx create-react-app <project-name>
+
+steps to run the react app
+---------------------------
+ cd <project-directory>
+ npm start
+ localhost:3000-runs at the port 3000
+
+public:- contains assets displayed to the user
+index.html: entry point to the react app
+  App.js->index.js->index.html
+manifest.json:- metadata to the device when react powered web application is 
+                installed on it
+robots.txt: used for search engine optimization
+src- major folder(90% times used)
+App.js-> root coomponent
+App.css-> for styling APP.js
+App.test.js,reportWebVitals.js,setupTest.js: related to unit testing the react 
+                                             components
+index.js: integrates app component with index.html
+index.css: contains the styles that are used in the entire application
+
+.gitignore,readme.md:- git versioning
+
+package.json:- lists information pertaining to the application which allows npm 
+               to run several scripts and perform various tasks in the app itself
+package-lock.json: holds the list of all dependencies with their specific versions
+                    node_modules folder is created based on this file
+   
+to recreate node_modules from package-lock.json
+run the following command: npm install
+
+modern style of creating react app
+----------------------------------
+npm create vite@latest
+project-name:
+React
+Javascript
+vite: is a development server which is modern replacement to cra(create-react-app)
+which is obsolete
+
+steps to run 
+-----------
+cd project-directory
+npm install
+npm run dev
+localhost:5173
+-----------------------------------------------
+exports are of two types
+1)default exports: export default name
+2)named exports: export function name(){}
+       export const name=()=>{}
+
+while importing default exports name can be same or different than what is
+used while exporting.No need to surround name with curly brackets
+One file can have only one default export
+
+ex:-  function Header()
+{
+}
+
+export default Header
+import Header from 'path'
+import MyHeader from 'path'
+
+export function Footer(){
+}
+
+export const Footer=()=>{}
+
+while importing named exports compulsorily same name as exporting must be used
+and surround the name in curly brackets
+import {Footer} from 'path'
+one file can have multiple named exports
+
+how to style react components with CSS
+----------------------------------------
+
+1.external -> global styles ,small projects
+        first import either in main.jsx or App.jsx
+         className=''
+2.module -> dedicated stylesheete for specific component
+            avoids naming conflicts
+            it requires additional setup
+            import name from 'path'
+            className={name.class}
+3.inline-> for small components with minimal styling
+           style={objectname}
+
+
+props:- readonly properties that are shared between components.
+A parent component can send them to a child component
+ <Component key=value key1=value1.../>
+Props is a javascript object
+optional input that any component can accept.It allows component content to be dynamic
+
+DefaultProps:- default values for props in case thay are not passed from the parent component
+
+conditionally apply a css class based on props and state of the component
+
+to specify multiple classes simplest option is to use template literals
+
+children props: sometimes it is also possible that you might not have an idea as to 
+                what content is being passed in,but still we want the component to render that 
+                unknown content
+                we can do that by specifying the content between the opening and closing tag of the
+                component and retrieving it using the reserved children property in the props object
+                To pass dynamic html content
+                To compose new components from existing components
+  
+conditional rendering: allows you to control what gets rendered in your application
+                       based on certain condition (show,hide or change component)
+                   
+Rendering Lists in react:
+
+
+click event in react(event handling)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
