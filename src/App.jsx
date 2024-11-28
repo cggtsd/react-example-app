@@ -1,10 +1,17 @@
 // import Card from './components/Card'
 // import {Button} from './components/Button/Button'
 
+import { ToDoList } from "./components/ToDoList"
+
+// import { ArrayOfObjects } from "./components/ArrayOfObjects"
+// import { StateArray } from "./components/StateArray"
+
+// import { StateObject } from "./components/StateObject"
+
 // import ButtonClick from "./components/ButtonClick"
 // import ChangeEvent from "./components/ChangeEvent"
-import { ColorPicker } from "./components/ColorPicker"
-import { UpdaterFunction } from "./components/UpdaterFunction"
+// import { ColorPicker } from "./components/ColorPicker"
+// import { UpdaterFunction } from "./components/UpdaterFunction"
 // import { Counter } from "./components/Counter"
 // import { List } from "./components/List"
 // import MyComponent from "./components/MyComponent"
@@ -69,7 +76,11 @@ function App() {
       {/* <Counter/> */}
       {/* <ChangeEvent/> */}
       {/* <ColorPicker/> */}
-      <UpdaterFunction/>
+      {/* <UpdaterFunction/> */}
+      {/* <StateObject/> */}
+      {/* <StateArray/> */}
+      {/* <ArrayOfObjects/> */}
+      <ToDoList/>
     </>
     
   )
