@@ -1,7 +1,21 @@
 // import Card from './components/Card'
 // import {Button} from './components/Button/Button'
 
-import { ToDoList } from "./components/ToDoList"
+import { ComponentD } from "./components/ComponentD"
+import { ComponnetA } from "./components/ComponnetA"
+import { RefComponent } from "./components/RefComponent"
+import { RefComponentFocus } from "./components/RefComponentFocus"
+
+// import { DigitalClock } from "./components/DigitalClock"
+
+// import { PostForm } from "./components/PostForm"
+
+// import { PostList } from "./components/PostsList"
+// import { DataFetching } from "./components/DataFetching"
+
+// import { EffectComponent } from "./components/EffectComponent"
+
+// import { ToDoList } from "./components/ToDoList"
 
 // import { ArrayOfObjects } from "./components/ArrayOfObjects"
 // import { StateArray } from "./components/StateArray"
@@ -80,8 +94,16 @@ function App() {
       {/* <StateObject/> */}
       {/* <StateArray/> */}
       {/* <ArrayOfObjects/> */}
-      <ToDoList/>
-    </>
+      {/* <ToDoList/> */}
+      {/* <EffectComponent/> */}
+      {/* <PostList /> */}
+      {/* <DataFetching/> */}
+      {/* <PostForm/> */}
+      {/* <DigitalClock/> */}
+      {/* <ComponnetA/> */}
+      {/* <RefComponent/> */}
+      <RefComponentFocus/>
+      </>
     
   )
   
