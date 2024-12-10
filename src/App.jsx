@@ -1,10 +1,17 @@
 // import Card from './components/Card'
 // import {Button} from './components/Button/Button'
 
-import { ComponentD } from "./components/ComponentD"
-import { ComponnetA } from "./components/ComponnetA"
-import { RefComponent } from "./components/RefComponent"
-import { RefComponentFocus } from "./components/RefComponentFocus"
+import PortalDemo from "./components/PortalDemo"
+
+// import GreetParent from "./components/GreetParent"
+
+// import FRParentComponent from "./components/FRParentComponent"
+// import StopWatch from "./components/StopWatch"
+
+// import { ComponentD } from "./components/ComponentD"
+// import { ComponnetA } from "./components/ComponnetA"
+// import { RefComponent } from "./components/RefComponent"
+// import { RefComponentFocus } from "./components/RefComponentFocus"
 
 // import { DigitalClock } from "./components/DigitalClock"
 
@@ -102,7 +109,12 @@ function App() {
       {/* <DigitalClock/> */}
       {/* <ComponnetA/> */}
       {/* <RefComponent/> */}
-      <RefComponentFocus/>
+      {/* <RefComponentFocus/> */}
+      {/* <StopWatch/> */}
+      {/* <FRParentComponent/> */}
+      {/* <GreetParent/> */}
+
+      <PortalDemo/>
       </>
     
   )
