@@ -1,7 +1,14 @@
 // import Card from './components/Card'
 // import {Button} from './components/Button/Button'
 
-import PortalDemo from "./components/PortalDemo"
+import { useState } from "react"
+// import { Modal } from "./components/Modal"
+
+import { Hero } from './components/Hero'
+import ErrorBoundary from "./components/ErrorBoundary"
+import DocTitleOne from "./components/DocTitleOne"
+import DocTitleTwo from "./components/DocTitleTwo"
+// import PortalDemo from "./components/PortalDemo"
 
 // import GreetParent from "./components/GreetParent"
 
@@ -60,65 +67,28 @@ function App() {
         { id:9,name: "Corn", calories: 40 },
         { id:10,name: "Tomato", calories: 22 }
   ]
-  
+  const [showModal, setShowModal] = useState(false)
+  const handleShowMessageClick = () => {
+    setShowModal(true)
+  }
+  const handleCloseModal = () => {
+    setShowModal(false)
+  }
   return (
     <>
-      {/* <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/> */}
-      {/* <Button/> */}
-      {/* <Button1 /> */}
-      {/* <StyleSheet primary={false} />
-      <Student name="Ravi" age={30} isStudent={ false} />
-      <Student name="Shravya" age={22} isStudent={false}>
-        <p>This is children props</p>
-        <h2>This is testing</h2>
-      </Student>
-      <Student name="Pradeep" age={32} isStudent={ true} />
-      <Student name="FATHIMA" age={100} isStudent={false} >
-        <button>Click me</button>
-      </Student>
-      <Student name="Feroz" age={30} />
-      <Student name="Rizwan" age={30} isStudent={true}>
-        <input placeholder="Enter your data"/>
-       </Student> */}
-      {/* <UserGreetings userName="Fathima" isLoggedIn={true} /> */}
-      {/* {
-        fruits.length > 0 && <List items={fruits} category="Fruits" />
-      }
-      {
-        vegetables.length > 0 && <List items={vegetables} category="Vegetables" />
-      } */}
-      {/* <ButtonClick/> */}
-      {/* <ProfilePicture/> */}
-      {/* <MyComponent/> */}
-      {/* <Counter/> */}
-      {/* <ChangeEvent/> */}
-      {/* <ColorPicker/> */}
-      {/* <UpdaterFunction/> */}
-      {/* <StateObject/> */}
-      {/* <StateArray/> */}
-      {/* <ArrayOfObjects/> */}
-      {/* <ToDoList/> */}
-      {/* <EffectComponent/> */}
-      {/* <PostList /> */}
-      {/* <DataFetching/> */}
-      {/* <PostForm/> */}
-      {/* <DigitalClock/> */}
-      {/* <ComponnetA/> */}
-      {/* <RefComponent/> */}
-      {/* <RefComponentFocus/> */}
-      {/* <StopWatch/> */}
-      {/* <FRParentComponent/> */}
-      {/* <GreetParent/> */}
-
-      <PortalDemo/>
+    {/* <ErrorBoundary>
+      <Hero heroName="Batman" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <Hero heroName="Superman" />
+     </ErrorBoundary>
+    <ErrorBoundary>
+      <Hero heroName="Joker" />
+      </ErrorBoundary> */}
+      <DocTitleOne/>
+      <DocTitleTwo/>
       </>
-    
   )
-  
 }
 
 export default App
