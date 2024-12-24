@@ -4,10 +4,12 @@
 import { useState } from "react"
 // import { Modal } from "./components/Modal"
 
-import { Hero } from './components/Hero'
-import ErrorBoundary from "./components/ErrorBoundary"
-import DocTitleOne from "./components/DocTitleOne"
-import DocTitleTwo from "./components/DocTitleTwo"
+// import { Hero } from './components/Hero'
+// import ErrorBoundary from "./components/ErrorBoundary"
+// import DocTitleOne from "./components/DocTitleOne"
+// import DocTitleTwo from "./components/DocTitleTwo"
+// import AddDeleteTableRows from "./AddDeleteTableRows"
+import UserForm from "./components/userForm"
 // import PortalDemo from "./components/PortalDemo"
 
 // import GreetParent from "./components/GreetParent"
@@ -84,9 +86,13 @@ function App() {
      </ErrorBoundary>
     <ErrorBoundary>
       <Hero heroName="Joker" />
-      </ErrorBoundary> */}
+      </ErrorBoundary> 
       <DocTitleOne/>
-      <DocTitleTwo/>
+      <DocTitleTwo />
+      */}
+      
+      {/* <AddDeleteTableRows/> */}
+      <UserForm/>
       </>
   )
 }
