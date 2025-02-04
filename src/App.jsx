@@ -10,6 +10,7 @@ import { useState } from "react"
 // import DocTitleTwo from "./components/DocTitleTwo"
 // import AddDeleteTableRows from "./AddDeleteTableRows"
 import UserForm from "./components/userForm"
+import ReducerHook from "./components/ReducerHook"
 // import PortalDemo from "./components/PortalDemo"
 
 // import GreetParent from "./components/GreetParent"
@@ -92,7 +93,8 @@ function App() {
       */}
       
       {/* <AddDeleteTableRows/> */}
-      <UserForm/>
+      {/* <UserForm/> */}
+      <ReducerHook/>
       </>
   )
 }
